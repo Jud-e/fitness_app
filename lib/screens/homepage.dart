@@ -121,6 +121,7 @@ class _HomeState extends State<Home> {
                     ),
                     yMargin(7),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Container(
                           decoration: BoxDecoration(
@@ -160,16 +161,16 @@ class _HomeState extends State<Home> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 const Icon(
-                                  Icons.arrow_upward,
+                                  Icons.compare_arrows,
                                   size: 15,
-                                  color: Colors.green,
+                                  color: Colors.black,
                                 ),
                                 xMargin(5),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    text("High", 10, Colors.grey),
-                                    text("8.5 mmol/L", 13, Colors.black)
+                                    text("Normal", 10, Colors.grey),
+                                    text("5.5 mmol/L", 13, Colors.black)
                                   ],
                                 )
                               ],
@@ -187,16 +188,16 @@ class _HomeState extends State<Home> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 const Icon(
-                                  Icons.arrow_upward,
+                                  Icons.arrow_downward,
                                   size: 15,
-                                  color: Colors.green,
+                                  color: Colors.red,
                                 ),
                                 xMargin(5),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    text("High", 10, Colors.grey),
-                                    text("8.5 mmol/L", 13, Colors.black)
+                                    text("Low", 10, Colors.grey),
+                                    text("3.5 mmol/L", 13, Colors.black)
                                   ],
                                 )
                               ],
