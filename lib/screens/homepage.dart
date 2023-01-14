@@ -72,7 +72,7 @@ class _HomeState extends State<Home> {
                 ),
               ],
             ),
-            Divider(
+            const Divider(
               height: 50.0,
               color: Colors.amber,
               thickness: 1.0,
@@ -81,43 +81,132 @@ class _HomeState extends State<Home> {
               decoration: BoxDecoration(
                   color: Colors.black,
                   border: Border.all(),
-                  borderRadius: BorderRadius.circular(10)),
-              child: Column(
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Row(
-                        children: [
-                          Container(
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                border: Border.all(),
-                                borderRadius: BorderRadius.circular(50)),
-                            child: const Padding(
-                              padding: EdgeInsets.all(10.0),
-                              child: Icon(Icons.search),
+                  borderRadius: BorderRadius.circular(20)),
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(5, 10, 5, 5),
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  border: Border.all(),
+                                  borderRadius: BorderRadius.circular(50)),
+                              child: const Padding(
+                                padding: EdgeInsets.all(10.0),
+                                child: Icon(Icons.search),
+                              ),
+                            ),
+                            xMargin(10),
+                            Column(
+                              children: [
+                                text("Glucose: 5.9 mmol/L", 14, Colors.white),
+                                text("You're on a good slte", 13,
+                                    Color.fromARGB(255, 230, 230, 230))
+                              ],
+                            )
+                          ],
+                        ),
+                        IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.more_horiz,
+                              color: Colors.white,
+                            ))
+                      ],
+                    ),
+                    yMargin(7),
+                    Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              border: Border.all(),
+                              borderRadius: BorderRadius.circular(10)),
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                const Icon(
+                                  Icons.arrow_upward,
+                                  size: 15,
+                                  color: Colors.green,
+                                ),
+                                xMargin(5),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    text("High", 10, Colors.grey),
+                                    text("8.5 mmol/L", 13, Colors.black)
+                                  ],
+                                )
+                              ],
                             ),
                           ),
-                          xMargin(10),
-                          Column(
-                            children: [
-                              text("Glucose: 5.9 mmol/L", 14, Colors.white),
-                              text("You're on a good slte", 13,
-                                  Color.fromARGB(255, 230, 230, 230))
-                            ],
-                          )
-                        ],
-                      ),
-                      IconButton(
-                          onPressed: () {},
-                          icon: Icon(
-                            Icons.more_horiz,
-                            color: Colors.white,
-                          ))
-                    ],
-                  )
-                ],
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              border: Border.all(),
+                              borderRadius: BorderRadius.circular(10)),
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                const Icon(
+                                  Icons.arrow_upward,
+                                  size: 15,
+                                  color: Colors.green,
+                                ),
+                                xMargin(5),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    text("High", 10, Colors.grey),
+                                    text("8.5 mmol/L", 13, Colors.black)
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              border: Border.all(),
+                              borderRadius: BorderRadius.circular(10)),
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                const Icon(
+                                  Icons.arrow_upward,
+                                  size: 15,
+                                  color: Colors.green,
+                                ),
+                                xMargin(5),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    text("High", 10, Colors.grey),
+                                    text("8.5 mmol/L", 13, Colors.black)
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    )
+                  ],
+                ),
               ),
             ),
           ]),
