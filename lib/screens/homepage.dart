@@ -1,4 +1,5 @@
 import 'package:fitness_app/constants.dart';
+import 'package:fitness_app/screens/activities.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -126,122 +127,145 @@ class _HomeState extends State<Home> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        // tracker(Icon(Icons.arrow_upward), "High", "8.5 mmol/L",
-                        //     Colors.green),
                         Flexible(
-                          flex: 3,
-                          child: Container(
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                border: Border.all(),
-                                borderRadius: BorderRadius.circular(15)),
-                            child: Padding(
-                              padding: const EdgeInsets.all(10.0),
-                              child: Row(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  const Icon(
-                                    Icons.arrow_upward,
-                                    size: 12,
-                                    color: Colors.green,
-                                  ),
-                                  xMargin(5),
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      text("High", 10, Colors.grey),
-                                      text("8.5 mmol/L", 13, Colors.black)
-                                    ],
-                                  )
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
+                            flex: 3,
+                            child: tracker(Icons.arrow_upward, "High",
+                                "8.5 mmol/L", Colors.green)),
                         Flexible(
-                          flex: 3,
-                          child: Container(
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                border: Border.all(),
-                                borderRadius: BorderRadius.circular(15)),
-                            child: Padding(
-                              padding: const EdgeInsets.all(10.0),
-                              child: Row(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  const Icon(
-                                    Icons.compare_arrows,
-                                    size: 12,
-                                    color: Colors.black,
-                                  ),
-                                  xMargin(5),
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      text("Normal", 10, Colors.grey),
-                                      text("5.5 mmol/L", 13, Colors.black)
-                                    ],
-                                  )
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
+                            flex: 3,
+                            child: tracker(Icons.compare_arrows, "Normal",
+                                "5.5 mmol/L", Colors.black)),
                         Flexible(
-                          flex: 3,
-                          child: Container(
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                border: Border.all(),
-                                borderRadius: BorderRadius.circular(15)),
-                            child: Padding(
-                              padding: const EdgeInsets.all(10.0),
-                              child: Row(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  const Icon(
-                                    Icons.arrow_downward,
-                                    size: 12,
-                                    color: Colors.red,
-                                  ),
-                                  xMargin(5),
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      text("Low", 10, Colors.grey),
-                                      text("3.5 mmol/L", 13, Colors.black)
-                                    ],
-                                  )
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
+                            flex: 3,
+                            child: tracker(Icons.arrow_downward, "Low",
+                                "3.5 mmol/L", Colors.red)),
                       ],
                     )
                   ],
                 ),
               ),
             ),
-            yMargin(10),
+            yMargin(12),
             Row(
               children: [
                 Flexible(
                     flex: 2,
                     child: Container(
-                      child: Column(
-                        children: [
-                          Row(
-                            children: [text("SYS", 15, Colors.black)],
-                          )
-                        ],
+                      decoration: BoxDecoration(
+                          color: Colors.grey,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Column(
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    text("SYS", 15, Colors.black),
+                                    yMargin(20),
+                                    RichText(
+                                        text: const TextSpan(children: [
+                                      TextSpan(
+                                          text: "1123",
+                                          style: TextStyle(
+                                              fontSize: 15,
+                                              color: Colors.blue)),
+                                      TextSpan(
+                                          text: "mmHg",
+                                          style: TextStyle(
+                                              fontSize: 13,
+                                              color: Colors.black))
+                                    ])),
+                                    yMargin(10),
+                                    text("The meaning of ", 10, Colors.black),
+                                    text("Care", 10, Colors.black)
+                                  ],
+                                ),
+                                Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    const Icon(Icons.favorite_border_rounded),
+                                    yMargin(40),
+                                    const Icon(Icons.favorite_border_rounded),
+                                  ],
+                                )
+                              ],
+                            )
+                          ],
+                        ),
                       ),
                     )),
-                Flexible(flex: 2, child: Container())
+                xMargin(10),
+                Flexible(
+                    flex: 2,
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: Colors.grey,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Column(
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    text("SYS", 15, Colors.black),
+                                    yMargin(20),
+                                    RichText(
+                                        text: const TextSpan(children: [
+                                      TextSpan(
+                                          text: "1123",
+                                          style: TextStyle(
+                                              fontSize: 15,
+                                              color: Colors.blue)),
+                                      TextSpan(
+                                          text: "mmHg",
+                                          style: TextStyle(
+                                              fontSize: 13,
+                                              color: Colors.black))
+                                    ])),
+                                    yMargin(10),
+                                    text("The meaning of ", 10, Colors.black),
+                                    text("Care", 10, Colors.black)
+                                  ],
+                                ),
+                                Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    const Icon(Icons.favorite_border_rounded),
+                                    yMargin(40),
+                                    const Icon(Icons.favorite_border_rounded),
+                                  ],
+                                )
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                    )),
+              ],
+            ),
+            yMargin(20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                text("Today's Activities", 15, Colors.black),
+                GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Activity()));
+                    },
+                    child: text("Details", 15, Colors.blue))
               ],
             )
           ]),

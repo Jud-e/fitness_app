@@ -23,7 +23,7 @@ Widget tracker(IconData icon, String text1, String text2, Color color) {
         border: Border.all(),
         borderRadius: BorderRadius.circular(10)),
     child: Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(12.0),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
