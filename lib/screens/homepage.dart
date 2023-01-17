@@ -293,6 +293,7 @@ class _HomeState extends State<Home> {
                           Row(
                             children: [
                               text("text", 10, Colors.black),
+                              xMargin(20),
                               text("text", 10, Colors.black)
                             ],
                           )
