@@ -267,6 +267,41 @@ class _HomeState extends State<Home> {
                     },
                     child: text("Details", 15, Colors.blue))
               ],
+            ),
+            yMargin(20),
+            Column(
+              children: [
+                Container(
+                  color: Colors.amber,
+                  width: double.infinity,
+                  child: Row(
+                    children: [
+                      Container(
+                        child: Icon(Icons.abc),
+                      ),
+                      xMargin(10),
+                      Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              text("text", 10, Colors.black),
+                              xMargin(20),
+                              text("text", 10, Colors.black)
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              text("text", 10, Colors.black),
+                              text("text", 10, Colors.black)
+                            ],
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                )
+              ],
             )
           ]),
         ),
