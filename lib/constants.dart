@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 Widget xMargin(double x) {
@@ -80,7 +79,7 @@ Widget detail(IconData icon1, String title, String subtitle, String duration) {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            Icon(
+            const Icon(
               Icons.more_horiz_outlined,
               color: Colors.red,
             ),
@@ -89,5 +88,36 @@ Widget detail(IconData icon1, String title, String subtitle, String duration) {
         )
       ]),
     ),
+  );
+}
+
+Widget header(BuildContext context, String title) {
+  return Row(
+    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    children: [
+      Container(
+        decoration: BoxDecoration(
+            border: Border.all(color: Colors.black),
+            borderRadius: BorderRadius.circular(10)),
+        child: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: GestureDetector(
+              onTap: () => Navigator.pop(context),
+              child: const Icon(Icons.arrow_back)),
+        ),
+      ),
+      text(title, 15, Colors.black),
+      Container(
+        decoration: BoxDecoration(
+            border: Border.all(color: Colors.black),
+            borderRadius: BorderRadius.circular(10)),
+        child: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: GestureDetector(
+              onTap: () => Navigator.pop(context),
+              child: const Icon(Icons.abc)),
+        ),
+      ),
+    ],
   );
 }

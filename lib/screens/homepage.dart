@@ -1,5 +1,6 @@
 import 'package:fitness_app/constants.dart';
 import 'package:fitness_app/screens/activities.dart';
+import 'package:fitness_app/screens/overview.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -43,13 +44,19 @@ class _HomeState extends State<Home> {
                         ),
                       ),
                       xMargin(8.0),
-                      Container(
-                        decoration: BoxDecoration(
-                            border: Border.all(),
-                            borderRadius: BorderRadius.circular(10)),
-                        child: const Padding(
-                          padding: EdgeInsets.all(10.0),
-                          child: Icon(Icons.person),
+                      GestureDetector(
+                        onTap: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Overview())),
+                        child: Container(
+                          decoration: BoxDecoration(
+                              border: Border.all(),
+                              borderRadius: BorderRadius.circular(10)),
+                          child: const Padding(
+                            padding: EdgeInsets.all(10.0),
+                            child: Icon(Icons.abc),
+                          ),
                         ),
                       ),
                     ],

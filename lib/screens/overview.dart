@@ -1,16 +1,17 @@
-import 'package:fitness_app/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-class Activity extends StatefulWidget {
-  const Activity({super.key});
+import '../constants.dart';
+
+class Overview extends StatefulWidget {
+  const Overview({super.key});
 
   @override
-  State<Activity> createState() => _ActivityState();
+  State<Overview> createState() => _OverviewState();
 }
 
-class _ActivityState extends State<Activity> {
+class _OverviewState extends State<Overview> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +20,7 @@ class _ActivityState extends State<Activity> {
         child: SafeArea(
             child: SingleChildScrollView(
                 child: Column(
-          children: [header(context, "Activities")],
+          children: [header(context, "Overview")],
         ))),
       ),
     );
