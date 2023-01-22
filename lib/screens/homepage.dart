@@ -1,3 +1,4 @@
+import 'package:fitness_app/colors.dart';
 import 'package:fitness_app/constants.dart';
 import 'package:fitness_app/screens/activities.dart';
 import 'package:fitness_app/screens/overview.dart';
@@ -14,6 +15,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: whiteBg,
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: SafeArea(
@@ -83,7 +85,7 @@ class _HomeState extends State<Home> {
               ),
               const Divider(
                 height: 50.0,
-                color: Colors.amber,
+                color: Colors.black,
                 thickness: 1.0,
               ),
               Container(
@@ -164,7 +166,7 @@ class _HomeState extends State<Home> {
                       flex: 2,
                       child: Container(
                         decoration: BoxDecoration(
-                            color: Colors.grey,
+                            color: greyBg,
                             borderRadius: BorderRadius.circular(20)),
                         child: Padding(
                           padding: const EdgeInsets.all(20.0),
@@ -218,7 +220,7 @@ class _HomeState extends State<Home> {
                       flex: 2,
                       child: Container(
                         decoration: BoxDecoration(
-                            color: Colors.grey,
+                            color: greyBg,
                             borderRadius: BorderRadius.circular(20)),
                         child: Padding(
                           padding: const EdgeInsets.all(20.0),

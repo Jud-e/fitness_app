@@ -1,4 +1,6 @@
+import 'package:fitness_app/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 Widget xMargin(double x) {
   return SizedBox(width: x);
@@ -11,6 +13,7 @@ Widget yMargin(double y) {
 Widget text(String text, double fontSize, Color color) {
   return Text(
     text,
+    // style: GoogleFonts.quicksand(fontSize: fontSize, color: color),
     style: TextStyle(fontSize: fontSize, color: color),
   );
 }
@@ -20,7 +23,7 @@ Widget tracker(IconData icon, String text1, String text2, Color color) {
     decoration: BoxDecoration(
         color: Colors.white,
         border: Border.all(),
-        borderRadius: BorderRadius.circular(10)),
+        borderRadius: BorderRadius.circular(20)),
     child: Padding(
       padding: const EdgeInsets.all(12.0),
       child: Row(
@@ -47,8 +50,8 @@ Widget tracker(IconData icon, String text1, String text2, Color color) {
 
 Widget detail(IconData icon1, String title, String subtitle, String duration) {
   return Container(
-    decoration: BoxDecoration(
-        color: Colors.amber, borderRadius: BorderRadius.circular(15)),
+    decoration:
+        BoxDecoration(color: greyBg, borderRadius: BorderRadius.circular(15)),
     width: double.infinity,
     // height: 80,
     child: Padding(
@@ -79,9 +82,9 @@ Widget detail(IconData icon1, String title, String subtitle, String duration) {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            const Icon(
+            Icon(
               Icons.more_horiz_outlined,
-              color: Colors.red,
+              color: blackBg,
             ),
             text(duration, 20, Colors.black),
           ],
