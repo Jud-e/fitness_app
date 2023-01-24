@@ -59,7 +59,7 @@ class _OverviewState extends State<Overview> {
                                       TextSpan(
                                           text: "%",
                                           style: TextStyle(
-                                              fontSize: 13, color: blackBg))
+                                              fontSize: 13, color: darker))
                                     ])),
                                   ],
                                 ),
@@ -67,7 +67,10 @@ class _OverviewState extends State<Overview> {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
-                                    const Icon(Icons.more_horiz_rounded),
+                                    Icon(
+                                      Icons.more_horiz_rounded,
+                                      color: darker,
+                                    ),
                                     yMargin(40),
                                     Icon(
                                       FontAwesomeIcons.bottleDroplet,
@@ -111,7 +114,7 @@ class _OverviewState extends State<Overview> {
                                       TextSpan(
                                           text: "%",
                                           style: TextStyle(
-                                              fontSize: 13, color: blackBg))
+                                              fontSize: 13, color: darker))
                                     ])),
                                   ],
                                 ),
@@ -119,7 +122,10 @@ class _OverviewState extends State<Overview> {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
-                                    const Icon(Icons.more_horiz_rounded),
+                                    Icon(
+                                      Icons.more_horiz_rounded,
+                                      color: darker,
+                                    ),
                                     yMargin(40),
                                     Icon(
                                       FontAwesomeIcons.boltLightning,

@@ -63,7 +63,10 @@ class _ActivityState extends State<Activity> {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
-                                    const Icon(Icons.more_horiz_rounded),
+                                    Icon(
+                                      Icons.more_horiz_rounded,
+                                      color: darker,
+                                    ),
                                     yMargin(40),
                                     const Icon(Icons.favorite_border_rounded),
                                   ],
@@ -112,7 +115,10 @@ class _ActivityState extends State<Activity> {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
-                                    const Icon(Icons.more_horiz_rounded),
+                                    Icon(
+                                      Icons.more_horiz_rounded,
+                                      color: darker,
+                                    ),
                                     yMargin(40),
                                   ],
                                 )
