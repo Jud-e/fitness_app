@@ -293,13 +293,17 @@ class _HomeState extends State<Home> {
               yMargin(20),
               Column(
                 children: [
-                  detail(Icons.abc, "Azoptec Obat", "After lunch", "10mg"),
+                  detail(Icons.abc, "Azoptec Obat", "After lunch", "10mg",
+                      blueIcon),
                   yMargin(10),
-                  detail(Icons.abc, "Ketoprofen", "After lunch", "10mg"),
+                  detail(
+                      Icons.abc, "Ketoprofen", "After lunch", "10mg", blueIcon),
                   yMargin(10),
-                  detail(Icons.abc, "Walking", "15 Jan 2023", "12PM to 1PM"),
+                  detail(Icons.abc, "Walking", "15 Jan 2023", "12PM to 1PM",
+                      darker),
                   yMargin(10),
-                  detail(Icons.abc, "Fitness", "15 Jan 2023", "1PM to 2PM")
+                  detail(
+                      Icons.abc, "Fitness", "15 Jan 2023", "1PM to 2PM", darker)
                 ],
               )
             ]),

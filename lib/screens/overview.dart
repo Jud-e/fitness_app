@@ -142,15 +142,20 @@ class _OverviewState extends State<Overview> {
             yMargin(20),
             Column(
               children: [
-                detail(Icons.abc, "title", "subtitle", "duration"),
+                detail(Icons.abc, "Consultation", "15 Jan 2023", "9AM to 10AM",
+                    darker),
                 yMargin(10),
-                detail(Icons.abc, "title", "subtitle", "duration"),
+                detail(Icons.abc, "Medical check up", "heart test",
+                    "11AM to 12AM", darker),
                 yMargin(10),
-                detail(Icons.abc, "title", "subtitle", "duration"),
+                detail(
+                    Icons.abc, "Ketoprofen", "After lunch", "10mg", blueIcon),
                 yMargin(10),
-                detail(Icons.abc, "title", "subtitle", "duration"),
+                detail(
+                    Icons.abc, "Walking", "15 Jan 2023", "12AM to 1PM", darker),
                 yMargin(10),
-                detail(Icons.abc, "title", "subtitle", "duration")
+                detail(
+                    Icons.abc, "Fitness", "15 Jan 2023", "1PM to 2PM", darker)
               ],
             )
           ],

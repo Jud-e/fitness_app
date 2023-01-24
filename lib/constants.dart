@@ -48,7 +48,8 @@ Widget tracker(IconData icon, String text1, String text2, Color color) {
   );
 }
 
-Widget detail(IconData icon1, String title, String subtitle, String duration) {
+Widget detail(IconData icon1, String title, String subtitle, String duration,
+    Color color) {
   return Container(
     decoration:
         BoxDecoration(color: greyBg, borderRadius: BorderRadius.circular(15)),
@@ -75,9 +76,9 @@ Widget detail(IconData icon1, String title, String subtitle, String duration) {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                text(title, 15, Colors.black),
+                text(title, 15, darker),
                 yMargin(5),
-                text(subtitle, 12, Colors.black)
+                text(subtitle, 12, darker)
               ],
             )
           ],
@@ -88,9 +89,9 @@ Widget detail(IconData icon1, String title, String subtitle, String duration) {
           children: [
             Icon(
               Icons.more_horiz_outlined,
-              color: blackBg,
+              color: darker,
             ),
-            text(duration, 12, blueIcon),
+            text(duration, 12, color),
           ],
         )
       ]),
