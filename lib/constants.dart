@@ -22,7 +22,7 @@ Widget tracker(IconData icon, String text1, String text2, Color color) {
   return Container(
     decoration: BoxDecoration(
         color: Colors.white,
-        border: Border.all(),
+        border: Border.all(color: whiteBg),
         borderRadius: BorderRadius.circular(20)),
     child: Padding(
       padding: const EdgeInsets.all(12.0),
@@ -104,7 +104,7 @@ Widget header(BuildContext context, String title) {
     children: [
       Container(
         decoration: BoxDecoration(
-            border: Border.all(color: Colors.black),
+            border: Border.all(color: darkGrey),
             borderRadius: BorderRadius.circular(10)),
         child: Padding(
           padding: const EdgeInsets.all(10.0),
@@ -116,7 +116,7 @@ Widget header(BuildContext context, String title) {
       text(title, 15, Colors.black),
       Container(
         decoration: BoxDecoration(
-            border: Border.all(color: Colors.black),
+            border: Border.all(color: darkGrey),
             borderRadius: BorderRadius.circular(10)),
         child: Padding(
           padding: const EdgeInsets.all(10.0),

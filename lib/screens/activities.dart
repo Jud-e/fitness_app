@@ -52,7 +52,7 @@ class _ActivityState extends State<Activity> {
                                       TextSpan(
                                           text: "10",
                                           style: TextStyle(
-                                              fontSize: 30, color: blueIcon)),
+                                              fontSize: 20, color: blueIcon)),
                                       TextSpan(
                                           text: "%",
                                           style: TextStyle(
@@ -105,7 +105,11 @@ class _ActivityState extends State<Activity> {
                                       TextSpan(
                                           text: "2 Litres",
                                           style: TextStyle(
-                                              fontSize: 30, color: blueIcon)),
+                                              fontSize: 20, color: blueIcon)),
+                                      TextSpan(
+                                          text: "/day",
+                                          style: TextStyle(
+                                              fontSize: 15, color: darker))
                                     ])),
                                   ],
                                 ),
@@ -120,8 +124,8 @@ class _ActivityState extends State<Activity> {
             yMargin(10),
             Container(
               decoration: BoxDecoration(
-                  color: Colors.black,
-                  border: Border.all(),
+                  color: greyBg,
+                  border: Border.all(color: greyBg),
                   borderRadius: BorderRadius.circular(20)),
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(3, 10, 3, 3),
@@ -137,28 +141,28 @@ class _ActivityState extends State<Activity> {
                               Container(
                                 decoration: BoxDecoration(
                                     color: Colors.white,
-                                    border: Border.all(),
+                                    border: Border.all(color: Colors.white),
                                     borderRadius: BorderRadius.circular(50)),
-                                child: const Padding(
-                                  padding: EdgeInsets.all(10.0),
-                                  child: Icon(Icons.search),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(10.0),
+                                  child: Icon(Icons.search, color: blueIcon),
                                 ),
                               ),
                               xMargin(10),
                               Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  text("Glucose: 5.9 mmol/L", 14, Colors.white),
-                                  text("You're on a good slte", 13,
-                                      const Color.fromARGB(255, 230, 230, 230))
+                                  text("Walking", 14, blackBg),
+                                  text("Today at 12PM . 12KM", 13, darker)
                                 ],
                               )
                             ],
                           ),
                           IconButton(
                               onPressed: () {},
-                              icon: const Icon(
+                              icon: Icon(
                                 Icons.more_horiz,
-                                color: Colors.white,
+                                color: darker,
                               ))
                         ],
                       ),
@@ -169,16 +173,16 @@ class _ActivityState extends State<Activity> {
                       children: [
                         Flexible(
                             flex: 3,
-                            child: tracker(Icons.arrow_upward, "High",
-                                "8.5 mmol/L", Colors.green)),
+                            child: tracker(Icons.arrow_upward, "Calories",
+                                "8.5 mmol/L", darker)),
                         Flexible(
                             flex: 3,
-                            child: tracker(Icons.compare_arrows, "Normal",
-                                "5.5 mmol/L", Colors.black)),
+                            child: tracker(Icons.compare_arrows, "Run duration",
+                                "2 hours", darker)),
                         Flexible(
                             flex: 3,
-                            child: tracker(Icons.arrow_downward, "Low",
-                                "3.5 mmol/L", Colors.red)),
+                            child: tracker(
+                                Icons.arrow_downward, "Speed", "4km", darker)),
                       ],
                     )
                   ],
@@ -186,20 +190,20 @@ class _ActivityState extends State<Activity> {
               ),
             ),
             yMargin(20),
-            text("Description", 20, blackBg),
+            text("Description", 15, blackBg),
             yMargin(10),
             text(
-                "liroboborubfiwvfboibefyovfoywbfiwfbweifbeifefwhfbwhebfwfbwefbwfubweifbewfuvewfiuvewfiuewvfiuefue",
+                "A medical student-run clinic is a health care delivery program in which medical students take primary responsibility for logistics",
                 15,
-                blackBg),
+                darker),
             Divider(
               height: 50,
-              color: blackBg,
+              color: darkGrey,
             ),
             Container(
               decoration: BoxDecoration(
-                  color: Colors.black,
-                  border: Border.all(),
+                  color: greyBg,
+                  border: Border.all(color: greyBg),
                   borderRadius: BorderRadius.circular(20)),
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(3, 10, 3, 3),
@@ -215,28 +219,28 @@ class _ActivityState extends State<Activity> {
                               Container(
                                 decoration: BoxDecoration(
                                     color: Colors.white,
-                                    border: Border.all(),
+                                    border: Border.all(color: Colors.white),
                                     borderRadius: BorderRadius.circular(50)),
-                                child: const Padding(
-                                  padding: EdgeInsets.all(10.0),
-                                  child: Icon(Icons.search),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(10.0),
+                                  child: Icon(Icons.search, color: blueIcon),
                                 ),
                               ),
                               xMargin(10),
                               Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  text("Glucose: 5.9 mmol/L", 14, Colors.white),
-                                  text("You're on a good slte", 13,
-                                      const Color.fromARGB(255, 230, 230, 230))
+                                  text("Fitness", 14, blackBg),
+                                  text("Today at 12PM . 12KM", 13, darker)
                                 ],
                               )
                             ],
                           ),
                           IconButton(
                               onPressed: () {},
-                              icon: const Icon(
+                              icon: Icon(
                                 Icons.more_horiz,
-                                color: Colors.white,
+                                color: darker,
                               ))
                         ],
                       ),
@@ -247,16 +251,16 @@ class _ActivityState extends State<Activity> {
                       children: [
                         Flexible(
                             flex: 3,
-                            child: tracker(Icons.arrow_upward, "High",
-                                "8.5 mmol/L", Colors.green)),
+                            child: tracker(Icons.arrow_upward, "Calories",
+                                "12 mmol/L", darker)),
                         Flexible(
                             flex: 3,
-                            child: tracker(Icons.compare_arrows, "Normal",
-                                "5.5 mmol/L", Colors.black)),
+                            child: tracker(Icons.compare_arrows, "Run duration",
+                                "4 hours", darker)),
                         Flexible(
                             flex: 3,
-                            child: tracker(Icons.arrow_downward, "Low",
-                                "3.5 mmol/L", Colors.red)),
+                            child: tracker(
+                                Icons.arrow_downward, "Speed", "0km", darker)),
                       ],
                     )
                   ],
@@ -264,12 +268,12 @@ class _ActivityState extends State<Activity> {
               ),
             ),
             yMargin(20),
-            text("Description", 20, blackBg),
+            text("Description", 15, blackBg),
             yMargin(10),
             text(
-                "liroboborubfiwvfboibefyovfoywbfiwfbweifbeifefwhfbwhebfwfbwefbwfubweifbewfuvewfiuvewfiuewvfiuefue",
+                "Medical Fitness and Wellness Group specializes in Personal Training, Corrective Exercise, Stretching, Massage, Nutrition for weight loss",
                 15,
-                blackBg),
+                darker),
           ],
         ))),
       ),
