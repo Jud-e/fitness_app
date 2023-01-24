@@ -14,7 +14,7 @@ class Setup extends StatefulWidget {
 
 class _SetupState extends State<Setup> {
   int _selectedIndex = 0;
-  static const List _widgetOptions = [Home(), Activity(), Overview()];
+  static const List _widgetOptions = [Home(), Overview(), Activity()];
 
   void _onItemTapped(int index) {
     setState(() {
