@@ -1,16 +1,6 @@
-# fitness_app
+Just an attempt at creating UI using Flutter.
 
-A new Flutter project.
+The original design belongs to Adalahreza
+Link to dribbble: "https://dribbble.com/shots/20369729-Medicalic-Mobile-App"
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Some icons were inaccessible for me so I swapped them with other icons I thought would suffice.

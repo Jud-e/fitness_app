@@ -115,7 +115,7 @@ Widget header(BuildContext context, String title) {
               child: const Icon(Icons.arrow_back)),
         ),
       ),
-      text(title, 15, Colors.black),
+      text(title, 20, Colors.black),
       Container(
         decoration: BoxDecoration(
             border: Border.all(color: darkGrey),

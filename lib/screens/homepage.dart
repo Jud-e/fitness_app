@@ -58,7 +58,7 @@ class _HomeState extends State<Home> {
                               borderRadius: BorderRadius.circular(12)),
                           child: const Padding(
                             padding: EdgeInsets.all(15.0),
-                            child: FaIcon(FontAwesomeIcons.waveSquare),
+                            child: FaIcon(FontAwesomeIcons.bookmark),
                           ),
                         ),
                       ),
