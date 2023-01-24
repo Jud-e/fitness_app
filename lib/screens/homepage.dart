@@ -3,6 +3,7 @@ import 'package:fitness_app/constants.dart';
 import 'package:fitness_app/screens/activities.dart';
 import 'package:fitness_app/screens/overview.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -57,7 +58,7 @@ class _HomeState extends State<Home> {
                               borderRadius: BorderRadius.circular(12)),
                           child: const Padding(
                             padding: EdgeInsets.all(15.0),
-                            child: Icon(Icons.abc),
+                            child: FaIcon(FontAwesomeIcons.waveSquare),
                           ),
                         ),
                       ),
