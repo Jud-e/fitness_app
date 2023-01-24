@@ -27,7 +27,7 @@ class _HomeState extends State<Home> {
                 children: [
                   Container(
                     decoration: BoxDecoration(
-                        border: Border.all(),
+                        border: Border.all(color: darkGrey),
                         borderRadius: BorderRadius.circular(10)),
                     child: const Padding(
                       padding: EdgeInsets.all(10.0),
@@ -38,7 +38,7 @@ class _HomeState extends State<Home> {
                     children: [
                       Container(
                         decoration: BoxDecoration(
-                            border: Border.all(),
+                            border: Border.all(color: darkGrey),
                             borderRadius: BorderRadius.circular(10)),
                         child: const Padding(
                           padding: EdgeInsets.all(10.0),
@@ -53,7 +53,7 @@ class _HomeState extends State<Home> {
                                 builder: (context) => const Overview())),
                         child: Container(
                           decoration: BoxDecoration(
-                              border: Border.all(),
+                              border: Border.all(color: darkGrey),
                               borderRadius: BorderRadius.circular(10)),
                           child: const Padding(
                             padding: EdgeInsets.all(10.0),
@@ -83,9 +83,9 @@ class _HomeState extends State<Home> {
                   ),
                 ],
               ),
-              const Divider(
+              Divider(
                 height: 50.0,
-                color: Colors.black,
+                color: darkGrey,
                 thickness: 1.0,
               ),
               Container(
@@ -94,7 +94,7 @@ class _HomeState extends State<Home> {
                     border: Border.all(),
                     borderRadius: BorderRadius.circular(20)),
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(3, 10, 3, 3),
+                  padding: const EdgeInsets.fromLTRB(3, 10, 3, 2),
                   child: Column(
                     children: [
                       Padding(
@@ -119,11 +119,7 @@ class _HomeState extends State<Home> {
                                   children: [
                                     text("Glucose: 5.9 mmol/L", 14,
                                         Colors.white),
-                                    text(
-                                        "You're on a good slte",
-                                        13,
-                                        const Color.fromARGB(
-                                            255, 230, 230, 230))
+                                    text("You're on a good slte", 13, darkGrey)
                                   ],
                                 )
                               ],
@@ -183,30 +179,34 @@ class _HomeState extends State<Home> {
                                       text("SYS", 15, Colors.black),
                                       yMargin(20),
                                       RichText(
-                                          text: const TextSpan(children: [
+                                          text: TextSpan(children: [
                                         TextSpan(
                                             text: "1123",
                                             style: TextStyle(
-                                                fontSize: 15,
-                                                color: Colors.blue)),
+                                                fontSize: 20, color: blueIcon)),
                                         TextSpan(
                                             text: "mmHg",
                                             style: TextStyle(
-                                                fontSize: 13,
-                                                color: Colors.black))
+                                                fontSize: 13, color: darker))
                                       ])),
                                       yMargin(10),
-                                      text("The meaning of ", 10, Colors.black),
-                                      text("Care", 10, Colors.black)
+                                      text("The meaning of ", 10, darker),
+                                      text("Care", 10, darker)
                                     ],
                                   ),
                                   Column(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
                                     children: [
-                                      const Icon(Icons.favorite_border_rounded),
+                                      Icon(
+                                        Icons.favorite_border_rounded,
+                                        color: darker,
+                                      ),
                                       yMargin(40),
-                                      const Icon(Icons.favorite_border_rounded),
+                                      Icon(
+                                        Icons.favorite_border_rounded,
+                                        color: blueIcon,
+                                      ),
                                     ],
                                   )
                                 ],
@@ -234,33 +234,37 @@ class _HomeState extends State<Home> {
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
-                                      text("SYS", 15, Colors.black),
+                                      text("DIA", 15, Colors.black),
                                       yMargin(20),
                                       RichText(
-                                          text: const TextSpan(children: [
+                                          text: TextSpan(children: [
                                         TextSpan(
-                                            text: "1123",
+                                            text: "79",
                                             style: TextStyle(
-                                                fontSize: 15,
-                                                color: Colors.blue)),
+                                                fontSize: 20, color: blueIcon)),
                                         TextSpan(
                                             text: "mmHg",
                                             style: TextStyle(
-                                                fontSize: 13,
-                                                color: Colors.black))
+                                                fontSize: 13, color: darker))
                                       ])),
                                       yMargin(10),
-                                      text("The meaning of ", 10, Colors.black),
-                                      text("Care", 10, Colors.black)
+                                      text("Growing to Meet", 10, darker),
+                                      text("Your Needs", 10, darker)
                                     ],
                                   ),
                                   Column(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
                                     children: [
-                                      const Icon(Icons.favorite_border_rounded),
+                                      Icon(
+                                        Icons.favorite_border_rounded,
+                                        color: darker,
+                                      ),
                                       yMargin(40),
-                                      const Icon(Icons.favorite_border_rounded),
+                                      Icon(
+                                        Icons.favorite_border_rounded,
+                                        color: blueIcon,
+                                      ),
                                     ],
                                   )
                                 ],
@@ -289,13 +293,13 @@ class _HomeState extends State<Home> {
               yMargin(20),
               Column(
                 children: [
-                  detail(Icons.abc, "title", "subtitle", "duration"),
+                  detail(Icons.abc, "Azoptec Obat", "After lunch", "10mg"),
                   yMargin(10),
-                  detail(Icons.abc, "title", "subtitle", "duration"),
+                  detail(Icons.abc, "Ketoprofen", "After lunch", "10mg"),
                   yMargin(10),
-                  detail(Icons.abc, "title", "subtitle", "duration"),
+                  detail(Icons.abc, "Walking", "15 Jan 2023", "12PM to 1PM"),
                   yMargin(10),
-                  detail(Icons.abc, "title", "subtitle", "duration")
+                  detail(Icons.abc, "Fitness", "15 Jan 2023", "1PM to 2PM")
                 ],
               )
             ]),

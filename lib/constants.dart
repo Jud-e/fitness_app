@@ -65,15 +65,19 @@ Widget detail(IconData icon1, String title, String subtitle, String duration) {
                     borderRadius: BorderRadius.circular(15)),
                 child: Padding(
                   padding: const EdgeInsets.all(20.0),
-                  child: Icon(icon1),
+                  child: Icon(
+                    icon1,
+                    color: blueIcon,
+                  ),
                 )),
             xMargin(12),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                text(title, 20, Colors.black),
-                text(subtitle, 10, Colors.black)
+                text(title, 15, Colors.black),
+                yMargin(5),
+                text(subtitle, 12, Colors.black)
               ],
             )
           ],
@@ -86,7 +90,7 @@ Widget detail(IconData icon1, String title, String subtitle, String duration) {
               Icons.more_horiz_outlined,
               color: blackBg,
             ),
-            text(duration, 20, Colors.black),
+            text(duration, 12, blueIcon),
           ],
         )
       ]),
