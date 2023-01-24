@@ -22,7 +22,138 @@ class _OverviewState extends State<Overview> {
         child: SafeArea(
             child: SingleChildScrollView(
                 child: Column(
-          children: [header(context, "Overview")],
+          children: [
+            header(context, "Overview"),
+            yMargin(20),
+            Divider(
+              color: blackBg,
+              height: 50.0,
+            ),
+            Row(
+              children: [
+                Flexible(
+                    flex: 2,
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: greyBg,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Column(
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    text("Vegetable", 20, Colors.black),
+                                    yMargin(30),
+                                    RichText(
+                                        text: TextSpan(children: [
+                                      TextSpan(
+                                          text: "35",
+                                          style: TextStyle(
+                                              fontSize: 30, color: blueIcon)),
+                                      TextSpan(
+                                          text: "%",
+                                          style: TextStyle(
+                                              fontSize: 13, color: blackBg))
+                                    ])),
+                                  ],
+                                ),
+                                Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    const Icon(Icons.more_horiz_rounded),
+                                    yMargin(40),
+                                    const Icon(Icons.favorite_border_rounded),
+                                  ],
+                                )
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                    )),
+                xMargin(10),
+                Flexible(
+                    flex: 2,
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: greyBg,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Column(
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    text("Protein", 20, Colors.black),
+                                    yMargin(30),
+                                    RichText(
+                                        text: TextSpan(children: [
+                                      TextSpan(
+                                          text: "55",
+                                          style: TextStyle(
+                                              fontSize: 30, color: blueIcon)),
+                                      TextSpan(
+                                          text: "%",
+                                          style: TextStyle(
+                                              fontSize: 13, color: blackBg))
+                                    ])),
+                                  ],
+                                ),
+                                Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    const Icon(Icons.more_horiz_rounded),
+                                    yMargin(40),
+                                    const Icon(Icons.favorite_border_rounded),
+                                  ],
+                                )
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                    )),
+              ],
+            ),
+            yMargin(20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                text("Make your life healthy", 15, Colors.black),
+                GestureDetector(
+                    onTap: () {}, child: text("Show all", 15, Colors.blue))
+              ],
+            ),
+            yMargin(20),
+            Column(
+              children: [
+                detail(Icons.abc, "title", "subtitle", "duration"),
+                yMargin(10),
+                detail(Icons.abc, "title", "subtitle", "duration"),
+                yMargin(10),
+                detail(Icons.abc, "title", "subtitle", "duration"),
+                yMargin(10),
+                detail(Icons.abc, "title", "subtitle", "duration"),
+                yMargin(10),
+                detail(Icons.abc, "title", "subtitle", "duration")
+              ],
+            )
+          ],
         ))),
       ),
     );
