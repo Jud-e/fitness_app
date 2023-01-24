@@ -1,6 +1,7 @@
 import 'package:fitness_app/colors.dart';
 import 'package:fitness_app/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Activity extends StatefulWidget {
   const Activity({super.key});
@@ -147,7 +148,8 @@ class _ActivityState extends State<Activity> {
                                     borderRadius: BorderRadius.circular(50)),
                                 child: Padding(
                                   padding: const EdgeInsets.all(10.0),
-                                  child: Icon(Icons.search, color: blueIcon),
+                                  child: Icon(FontAwesomeIcons.personWalking,
+                                      color: blueIcon),
                                 ),
                               ),
                               xMargin(10),
@@ -225,7 +227,8 @@ class _ActivityState extends State<Activity> {
                                     borderRadius: BorderRadius.circular(50)),
                                 child: Padding(
                                   padding: const EdgeInsets.all(10.0),
-                                  child: Icon(Icons.search, color: blueIcon),
+                                  child: Icon(FontAwesomeIcons.dumbbell,
+                                      color: blueIcon),
                                 ),
                               ),
                               xMargin(10),

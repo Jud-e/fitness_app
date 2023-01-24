@@ -1,7 +1,6 @@
 import 'package:fitness_app/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../constants.dart';
 
@@ -70,7 +69,10 @@ class _OverviewState extends State<Overview> {
                                   children: [
                                     const Icon(Icons.more_horiz_rounded),
                                     yMargin(40),
-                                    const Icon(Icons.favorite_border_rounded),
+                                    Icon(
+                                      FontAwesomeIcons.bottleDroplet,
+                                      color: blueIcon,
+                                    ),
                                   ],
                                 )
                               ],
@@ -119,7 +121,10 @@ class _OverviewState extends State<Overview> {
                                   children: [
                                     const Icon(Icons.more_horiz_rounded),
                                     yMargin(40),
-                                    const Icon(Icons.favorite_border_rounded),
+                                    Icon(
+                                      FontAwesomeIcons.boltLightning,
+                                      color: blueIcon,
+                                    ),
                                   ],
                                 )
                               ],
@@ -142,20 +147,20 @@ class _OverviewState extends State<Overview> {
             yMargin(20),
             Column(
               children: [
-                detail(Icons.abc, "Consultation", "15 Jan 2023", "9AM to 10AM",
-                    darker),
+                detail(FontAwesomeIcons.stethoscope, "Consultation",
+                    "15 Jan 2023", "9AM to 10AM", darker),
                 yMargin(10),
-                detail(Icons.abc, "Medical check up", "heart test",
-                    "11AM to 12AM", darker),
+                detail(FontAwesomeIcons.personBooth, "Medical check up",
+                    "Heart test", "11AM to 12AM", darker),
                 yMargin(10),
-                detail(
-                    Icons.abc, "Ketoprofen", "After lunch", "10mg", blueIcon),
+                detail(FontAwesomeIcons.bottleWater, "Ketoprofen",
+                    "After lunch", "10mg", blueIcon),
                 yMargin(10),
-                detail(
-                    Icons.abc, "Walking", "15 Jan 2023", "12AM to 1PM", darker),
+                detail(FontAwesomeIcons.personWalking, "Walking", "15 Jan 2023",
+                    "12AM to 1PM", darker),
                 yMargin(10),
-                detail(
-                    Icons.abc, "Fitness", "15 Jan 2023", "1PM to 2PM", darker)
+                detail(FontAwesomeIcons.dumbbell, "Fitness", "15 Jan 2023",
+                    "1PM to 2PM", darker)
               ],
             )
           ],

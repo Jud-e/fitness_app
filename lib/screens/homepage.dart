@@ -112,7 +112,7 @@ class _HomeState extends State<Home> {
                                       borderRadius: BorderRadius.circular(50)),
                                   child: const Padding(
                                     padding: EdgeInsets.all(10.0),
-                                    child: Icon(Icons.search),
+                                    child: Icon(FontAwesomeIcons.recordVinyl),
                                   ),
                                 ),
                                 xMargin(10),
@@ -294,17 +294,17 @@ class _HomeState extends State<Home> {
               yMargin(20),
               Column(
                 children: [
-                  detail(Icons.abc, "Azoptec Obat", "After lunch", "10mg",
-                      blueIcon),
+                  detail(FontAwesomeIcons.circle, "Azoptec Obat", "After lunch",
+                      "10mg", blueIcon),
                   yMargin(10),
-                  detail(
-                      Icons.abc, "Ketoprofen", "After lunch", "10mg", blueIcon),
+                  detail(FontAwesomeIcons.bottleWater, "Ketoprofen",
+                      "After lunch", "10mg", blueIcon),
                   yMargin(10),
-                  detail(Icons.abc, "Walking", "15 Jan 2023", "12PM to 1PM",
-                      darker),
+                  detail(FontAwesomeIcons.personWalking, "Walking",
+                      "15 Jan 2023", "12PM to 1PM", darker),
                   yMargin(10),
-                  detail(
-                      Icons.abc, "Fitness", "15 Jan 2023", "1PM to 2PM", darker)
+                  detail(FontAwesomeIcons.dumbbell, "Fitness", "15 Jan 2023",
+                      "1PM to 2PM", darker)
                 ],
               )
             ]),
