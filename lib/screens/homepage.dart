@@ -28,9 +28,9 @@ class _HomeState extends State<Home> {
                   Container(
                     decoration: BoxDecoration(
                         border: Border.all(color: darkGrey),
-                        borderRadius: BorderRadius.circular(10)),
+                        borderRadius: BorderRadius.circular(12)),
                     child: const Padding(
-                      padding: EdgeInsets.all(10.0),
+                      padding: EdgeInsets.all(15.0),
                       child: Icon(Icons.person),
                     ),
                   ),
@@ -39,9 +39,9 @@ class _HomeState extends State<Home> {
                       Container(
                         decoration: BoxDecoration(
                             border: Border.all(color: darkGrey),
-                            borderRadius: BorderRadius.circular(10)),
+                            borderRadius: BorderRadius.circular(12)),
                         child: const Padding(
-                          padding: EdgeInsets.all(10.0),
+                          padding: EdgeInsets.all(15.0),
                           child: Icon(Icons.search),
                         ),
                       ),
@@ -54,9 +54,9 @@ class _HomeState extends State<Home> {
                         child: Container(
                           decoration: BoxDecoration(
                               border: Border.all(color: darkGrey),
-                              borderRadius: BorderRadius.circular(10)),
+                              borderRadius: BorderRadius.circular(12)),
                           child: const Padding(
-                            padding: EdgeInsets.all(10.0),
+                            padding: EdgeInsets.all(15.0),
                             child: Icon(Icons.abc),
                           ),
                         ),
@@ -70,16 +70,16 @@ class _HomeState extends State<Home> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 0, 0, 5),
-                    child: text("It's all about how", 20.0, Colors.black),
+                    padding: const EdgeInsets.fromLTRB(0, 0, 0, 2),
+                    child: text("It's all about how", 30.0, Colors.black),
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(0, 0, 0, 5),
-                    child: text("we treat you.", 20.0, Colors.black),
+                    child: text("we treat you.", 30.0, Colors.black),
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(0, 0, 0, 5),
-                    child: text("That's powerful healing.", 13.0, Colors.grey),
+                    child: text("That's powerful healing.", 18.0, Colors.grey),
                   ),
                 ],
               ),

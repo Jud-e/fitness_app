@@ -1,8 +1,6 @@
 import 'package:fitness_app/colors.dart';
 import 'package:fitness_app/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class Activity extends StatefulWidget {
   const Activity({super.key});
@@ -90,15 +88,11 @@ class _ActivityState extends State<Activity> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Row(
-                                      children: [
-                                        text("Water", 20, Colors.black),
-                                        xMargin(54),
-                                        Icon(Icons.more_horiz_outlined)
-                                      ],
-                                    ),
+                                    text("Water", 20, Colors.black),
                                     yMargin(30),
                                     RichText(
                                         text: TextSpan(children: [
@@ -109,10 +103,18 @@ class _ActivityState extends State<Activity> {
                                       TextSpan(
                                           text: "/day",
                                           style: TextStyle(
-                                              fontSize: 15, color: darker))
+                                              fontSize: 13, color: blackBg))
                                     ])),
                                   ],
                                 ),
+                                Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    const Icon(Icons.more_horiz_rounded),
+                                    yMargin(40),
+                                  ],
+                                )
                               ],
                             )
                           ],

@@ -13,8 +13,9 @@ Widget yMargin(double y) {
 Widget text(String text, double fontSize, Color color) {
   return Text(
     text,
-    // style: GoogleFonts.quicksand(fontSize: fontSize, color: color),
-    style: TextStyle(fontSize: fontSize, color: color),
+    style: GoogleFonts.mulish(
+        fontSize: fontSize, color: color, fontWeight: FontWeight.w600),
+    // style: TextStyle(fontSize: fontSize, color: color),
   );
 }
 
@@ -106,9 +107,9 @@ Widget header(BuildContext context, String title) {
       Container(
         decoration: BoxDecoration(
             border: Border.all(color: darkGrey),
-            borderRadius: BorderRadius.circular(10)),
+            borderRadius: BorderRadius.circular(12)),
         child: Padding(
-          padding: const EdgeInsets.all(10.0),
+          padding: const EdgeInsets.all(15.0),
           child: GestureDetector(
               onTap: () => Navigator.pop(context),
               child: const Icon(Icons.arrow_back)),
@@ -118,9 +119,9 @@ Widget header(BuildContext context, String title) {
       Container(
         decoration: BoxDecoration(
             border: Border.all(color: darkGrey),
-            borderRadius: BorderRadius.circular(10)),
+            borderRadius: BorderRadius.circular(12)),
         child: Padding(
-          padding: const EdgeInsets.all(10.0),
+          padding: const EdgeInsets.all(15.0),
           child: GestureDetector(
               onTap: () => Navigator.pop(context),
               child: const Icon(Icons.abc)),
